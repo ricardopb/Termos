@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentos Legais — OdontoFicha e CicloSeguro</title>
+  <style>
+    :root { --indigo:#3f51b5; --steel:#2b6a8f; --ink:#1a1a2e; --muted:#5b6470; --bg:#f6f7fb; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+           background: var(--bg); color: var(--ink); line-height: 1.55; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+    header { text-align: center; margin-bottom: 36px; }
+    header h1 { font-size: 1.7rem; margin: 0 0 8px; }
+    header p { color: var(--muted); margin: 0; }
+    .card { background:#fff; border:1px solid #e6e8ef; border-radius: 14px; padding: 22px 24px;
+            margin: 18px 0; box-shadow: 0 1px 3px rgba(20,20,50,.04); }
+    .card h2 { margin: 0 0 4px; font-size: 1.2rem; display:flex; align-items:center; gap:10px; }
+    .dot { width:12px; height:12px; border-radius:50%; display:inline-block; }
+    .dot.indigo { background: var(--indigo); }
+    .dot.steel { background: var(--steel); }
+    .card p { color: var(--muted); margin: 4px 0 16px; font-size: .95rem; }
+    .links { display:flex; flex-wrap:wrap; gap:10px; }
+    .links a { text-decoration:none; font-weight:600; font-size:.95rem; padding:10px 16px;
+               border-radius:10px; border:1px solid #d8dbe6; color: var(--ink); background:#fafbff; }
+    .links a:hover { border-color: var(--indigo); color: var(--indigo); }
+    footer { text-align:center; color: var(--muted); font-size:.82rem; margin-top:34px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Documentos Legais</h1>
+      <p>Política de Privacidade e Termos de Uso dos aplicativos</p>
+    </header>
+
+    <div class="card">
+      <h2><span class="dot indigo"></span> OdontoFicha</h2>
+      <p>Prontuário odontológico — 100% local, dados cifrados no aparelho.</p>
+      <div class="links">
+        <a href="./odontoficha/privacidade.html">Política de Privacidade</a>
+        <a href="./odontoficha/termos.html">Termos de Uso</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="dot steel"></span> CicloSeguro</h2>
+      <p>Controle de esterilização (CME) — registros no aparelho e no Drive do próprio usuário.</p>
+      <div class="links">
+        <a href="./cicloseguro/privacidade.html">Política de Privacidade</a>
+        <a href="./cicloseguro/termos.html">Termos de Uso</a>
+      </div>
+    </div>
+
+    <footer>
+      Documentos em português (pt-BR), conforme a LGPD (Lei 13.709/2018).
+    </footer>
+  </div>
+</body>
+</html>

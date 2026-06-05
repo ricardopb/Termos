@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — ODONTOFICHA</title>
+<style>
+  :root {
+    --azul: #2E5E92;
+    --roxo: #5246B8;
+    --texto: #1f2937;
+    --suave: #4b5563;
+    --borda: #e2e8f0;
+    --fundo-aviso: #fef6e7;
+    --borda-aviso: #e0a82e;
+    --fundo-nota: #eef2fb;
+    --borda-nota: #5246B8;
+    --fundo-perigo: #fdecec;
+    --borda-perigo: #d64545;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--texto);
+    line-height: 1.65;
+    margin: 0;
+    background: #f8fafc;
+    padding: 24px 16px 64px;
+  }
+  main {
+    max-width: 820px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 40px 44px;
+  }
+  h1 {
+    color: var(--azul);
+    font-size: 1.9rem;
+    margin: 0 0 6px;
+    line-height: 1.25;
+  }
+  h2 {
+    color: var(--azul);
+    font-size: 1.3rem;
+    margin: 38px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--borda);
+    scroll-margin-top: 20px;
+  }
+  h3 {
+    color: var(--roxo);
+    font-size: 1.05rem;
+    margin: 22px 0 8px;
+  }
+  p, li { color: var(--texto); }
+  .sub { color: var(--suave); font-size: 0.95rem; margin-top: 0; }
+  a { color: var(--roxo); }
+  ul, ol { padding-left: 22px; }
+  li { margin: 5px 0; }
+  .meta {
+    font-size: 0.9rem;
+    color: var(--suave);
+    margin: 4px 0 0;
+  }
+  nav.toc {
+    background: var(--fundo-nota);
+    border: 1px solid var(--borda);
+    border-left: 4px solid var(--borda-nota);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 28px 0;
+  }
+  nav.toc strong { color: var(--azul); display: block; margin-bottom: 8px; }
+  nav.toc ol { margin: 0; padding-left: 20px; }
+  nav.toc a { text-decoration: none; }
+  nav.toc a:hover { text-decoration: underline; }
+  .aviso, .nota, .perigo {
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 18px 0;
+    font-size: 0.97rem;
+  }
+  .aviso {
+    background: var(--fundo-aviso);
+    border: 1px solid var(--borda-aviso);
+    border-left: 4px solid var(--borda-aviso);
+  }
+  .nota {
+    background: var(--fundo-nota);
+    border: 1px solid var(--borda);
+    border-left: 4px solid var(--borda-nota);
+  }
+  .perigo {
+    background: var(--fundo-perigo);
+    border: 1px solid var(--borda-perigo);
+    border-left: 4px solid var(--borda-perigo);
+  }
+  .aviso strong, .nota strong, .perigo strong { display: inline; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.95rem;
+  }
+  th, td {
+    border: 1px solid var(--borda);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--fundo-nota);
+    color: var(--azul);
+    font-weight: 600;
+  }
+  tr:nth-child(even) td { background: #fafbfc; }
+  code {
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  .placeholder {
+    background: #fff3cd;
+    border: 1px dashed var(--borda-aviso);
+    padding: 1px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  footer {
+    margin-top: 40px;
+    padding-top: 18px;
+    border-top: 1px solid var(--borda);
+    font-size: 0.88rem;
+    color: var(--suave);
+  }
+  .topo { font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade — ODONTOFICHA</h1>
+  <p class="sub">Prontuário Odontológico • aplicativo Android <code>br.com.odontoficha</code></p>
+  <p class="meta"><strong>Atualizado em:</strong> junho/2026</p>
+
+  <div class="aviso">
+    <strong>Aviso — documento em rascunho.</strong> Este texto foi elaborado como minuta técnica e
+    <strong>ainda deve ser revisado e validado por um advogado</strong> antes de entrar em vigor.
+    Ele não constitui aconselhamento jurídico.
+  </div>
+
+  <p>
+    Esta Política explica, de forma direta, como o aplicativo <strong>ODONTOFICHA</strong> lida com informações.
+    O princípio central é simples: <strong>seus dados ficam apenas no seu aparelho</strong>. Não existe servidor,
+    não existe nuvem e o desenvolvedor não tem acesso a nada que você registra.
+  </p>
+
+  <nav class="toc" aria-label="Índice">
+    <strong>Nesta página</strong>
+    <ol>
+      <li><a href="#identidade">Quem é o desenvolvedor</a></li>
+      <li><a href="#resumo">Resumo em uma frase</a></li>
+      <li><a href="#dados">Quais dados o app trata</a></li>
+      <li><a href="#onde">Onde os dados ficam (só no aparelho)</a></li>
+      <li><a href="#seguranca">Segurança</a></li>
+      <li><a href="#controlador">Quem é o controlador dos dados</a></li>
+      <li><a href="#guarda">Guarda do prontuário por 20 anos</a></li>
+      <li><a href="#direitos">Direitos do titular (paciente)</a></li>
+      <li><a href="#exportacao">Exportar e compartilhar</a></li>
+      <li><a href="#permissoes">Permissões do app</a></li>
+      <li><a href="#disclaimer">Não é dispositivo médico</a></li>
+      <li><a href="#ciclo">Sobre o CicloSeguro</a></li>
+      <li><a href="#alteracoes">Alterações desta Política</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="identidade">1. Quem é o desenvolvedor</h2>
+  <p>
+    O ODONTOFICHA é desenvolvido por <strong>Ricardo Passoni Bindi</strong> (desenvolvedor independente).
+    O contato para questões de privacidade está na seção <a href="#contato">Contato</a>.
+  </p>
+  <div class="nota">
+    <strong>Importante:</strong> o desenvolvedor <strong>não é operador</strong> dos dados na acepção da LGPD,
+    porque <strong>nunca</strong> tem acesso às informações registradas no app. Não há transmissão de dados para
+    o desenvolvedor nem para terceiros.
+  </div>
+
+  <h2 id="resumo">2. Resumo em uma frase</h2>
+  <p>
+    Tudo o que você digita no ODONTOFICHA é gravado <strong>criptografado, somente no seu aparelho</strong>.
+    Nada sai do dispositivo automaticamente. O desenvolvedor não vê, não coleta e não consegue recuperar esses dados.
+  </p>
+
+  <h2 id="dados">3. Quais dados o app trata</h2>
+  <p>O app foi feito para registrar atendimentos odontológicos. Entre os dados que <em>você</em> pode inserir estão:</p>
+  <table>
+    <thead>
+      <tr><th>Categoria</th><th>Exemplos</th><th>Natureza</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Identificação do paciente</td>
+        <td>Nome, dados de contato e demais campos cadastrais que você preencher</td>
+        <td>Dado pessoal</td>
+      </tr>
+      <tr>
+        <td>Identificação do profissional</td>
+        <td>Nome do dentista, número do CRO</td>
+        <td>Dado pessoal</td>
+      </tr>
+      <tr>
+        <td>Informações clínicas</td>
+        <td>Procedimentos realizados, evolução clínica, anotações do atendimento, histórico</td>
+        <td><strong>Dado pessoal sensível (saúde)</strong></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    As informações clínicas são <strong>dados sensíveis de saúde</strong> e recebem proteção reforçada,
+    conforme o <strong>art. 11 da LGPD</strong> (Lei nº 13.709/2018), cujo tratamento depende de
+    <strong>consentimento específico e destacado</strong> ou de outra hipótese legal aplicável à área da saúde.
+  </p>
+  <div class="nota">
+    <strong>Sem coleta automática:</strong> o ODONTOFICHA não coleta dados de uso, telemetria, analytics,
+    identificadores de publicidade ou localização. Não há SDKs de rastreamento de terceiros.
+  </div>
+
+  <h2 id="onde">4. Onde os dados ficam (só no aparelho)</h2>
+  <p>O ODONTOFICHA é <strong>100% offline / local-first</strong>:</p>
+  <ul>
+    <li>Os dados são gravados em um <strong>banco de dados local, dentro do próprio aparelho</strong>.</li>
+    <li><strong>Não há servidor</strong> do desenvolvedor e <strong>não há sincronização em nuvem</strong>.</li>
+    <li>O app funciona <strong>sem conexão com a internet</strong>.</li>
+    <li>Nenhuma informação clínica é enviada para fora do dispositivo pelo app.</li>
+  </ul>
+
+  <h2 id="seguranca">5. Segurança (segurança por design)</h2>
+  <p>O app adota medidas de segurança alinhadas ao <strong>art. 46 da LGPD</strong> (segurança e prevenção):</p>
+  <ul>
+    <li>
+      <strong>Banco de dados criptografado</strong> com <strong>SQLCipher</strong>. A chave de criptografia é
+      protegida pelo <strong>Android Keystore</strong> do próprio aparelho.
+    </li>
+    <li>
+      <strong>Trava de acesso</strong> ao app por <strong>senha</strong> e <strong>biometria</strong>
+      (impressão digital ou reconhecimento facial, conforme o dispositivo).
+    </li>
+    <li>
+      <strong>Consentimento na primeira execução:</strong> ao abrir o app pela primeira vez, você confirma
+      que leu e concorda com esta Política e com os Termos de Uso.
+    </li>
+  </ul>
+  <div class="aviso">
+    <strong>A segurança do aparelho importa.</strong> Como tudo fica no dispositivo, mantenha o sistema atualizado,
+    use bloqueio de tela e não compartilhe sua senha. A criptografia protege os dados, mas o cuidado físico e de
+    acesso ao aparelho é essencial.
+  </div>
+
+  <h2 id="controlador">6. Quem é o controlador dos dados</h2>
+  <p>
+    Na operação do app, <strong>o dentista (usuário) é o CONTROLADOR dos dados dos pacientes</strong>.
+    É ele quem decide quais dados registrar e para quê. Em consequência, cabe ao dentista:
+  </p>
+  <ul>
+    <li><strong>Obter e guardar o consentimento</strong> dos pacientes para o tratamento dos dados de saúde, quando aplicável;</li>
+    <li>Garantir que o uso dos dados respeite a LGPD, o Código de Ética Odontológica e as normas do CFO/CRO;</li>
+    <li>Atender às solicitações dos titulares (pacientes) sobre seus dados;</li>
+    <li>Zelar pela segurança do aparelho onde o app está instalado.</li>
+  </ul>
+  <div class="nota">
+    <strong>Papel do desenvolvedor:</strong> fornece a ferramenta (o software). Ele <strong>não acessa</strong> os
+    dados e, portanto, não atua como controlador nem como operador dos dados dos pacientes.
+  </div>
+
+  <h2 id="guarda">7. Guarda do prontuário por 20 anos</h2>
+  <p>
+    A legislação brasileira exige a <strong>guarda do prontuário do paciente pelo prazo mínimo de 20 anos</strong>
+    a contar do último registro (<strong>Lei nº 13.787/2018</strong>). Esse dever é do profissional/estabelecimento de saúde.
+  </p>
+  <ul>
+    <li>O app armazena o prontuário localmente, mas <strong>a responsabilidade pela guarda e preservação é do dentista</strong>.</li>
+    <li>
+      A mesma lei admite o prontuário em meio eletrônico, desde que atendidos requisitos de segurança e integridade,
+      incluindo, quando exigido, <strong>assinatura digital com certificado ICP-Brasil</strong>
+      (por exemplo, o <strong>e-CPF do dentista</strong>) para conferir validade jurídica aos documentos.
+    </li>
+  </ul>
+  <div class="aviso">
+    <strong>Faça backups regulares.</strong> Para cumprir o prazo de 20 anos, é fundamental manter cópias de
+    segurança fora do aparelho. Se o aparelho for perdido, danificado ou formatado <strong>sem backup</strong>,
+    os dados <strong>não poderão ser recuperados</strong> pelo desenvolvedor.
+  </div>
+
+  <h2 id="direitos">8. Direitos do titular (paciente)</h2>
+  <p>
+    A LGPD garante ao titular direitos como <strong>acesso, correção, eliminação, portabilidade</strong> e
+    informação sobre o tratamento dos seus dados. Como os dados ficam apenas no aparelho do dentista,
+    esses direitos são exercidos <strong>diretamente no app, pelo próprio dentista (controlador)</strong>:
+  </p>
+  <table>
+    <thead>
+      <tr><th>Direito</th><th>Como exercer no app</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Acesso / confirmação</td><td>Abrir o cadastro do paciente e consultar os registros existentes.</td></tr>
+      <tr><td>Correção</td><td>Editar o cadastro ou a evolução clínica do paciente.</td></tr>
+      <tr><td>Eliminação</td><td>Excluir o registro do paciente pela função de exclusão do app, observado o prazo legal de guarda do prontuário (Lei nº 13.787/2018).</td></tr>
+      <tr><td>Portabilidade / cópia</td><td>Usar a função de exportar/compartilhar (ver seção 9).</td></tr>
+    </tbody>
+  </table>
+  <div class="nota">
+    <strong>Atenção ao prazo legal:</strong> o direito de eliminação convive com o dever de guarda do prontuário
+    por 20 anos. O dentista deve avaliar, caso a caso, o que pode ser eliminado e o que deve ser preservado por lei.
+  </div>
+
+  <h2 id="exportacao">9. Exportar e compartilhar</h2>
+  <p>
+    O app pode oferecer funções para <strong>exportar</strong> informações ou <strong>compartilhar</strong> um
+    arquivo (por exemplo, gerar um documento e enviá-lo por outro aplicativo do aparelho).
+  </p>
+  <div class="aviso">
+    <strong>Ao exportar, os dados saem da proteção do app.</strong> Um arquivo exportado ou compartilhado
+    deixa de estar criptografado pelo ODONTOFICHA e passa a depender de onde você o enviar (e-mail, mensageiro,
+    armazenamento externo). <strong>Essa ação é de responsabilidade do dentista</strong>, que deve garantir o
+    sigilo do destino. O app exibe um aviso antes de exportar.
+  </div>
+
+  <h2 id="permissoes">10. Permissões do app</h2>
+  <p>
+    O ODONTOFICHA solicita apenas as permissões necessárias para funcionar localmente (por exemplo, biometria para
+    a trava de acesso e, quando você aciona, o seletor de arquivos do sistema para compartilhar). O app
+    <strong>não usa permissões para coletar dados em segundo plano</strong>.
+  </p>
+
+  <h2 id="disclaimer">11. Não é dispositivo médico</h2>
+  <div class="perigo">
+    <strong>O ODONTOFICHA não é um dispositivo médico.</strong> É uma ferramenta de <strong>registro e organização</strong>
+    de informações clínicas. Ele <strong>não realiza diagnóstico, não recomenda tratamento e não substitui o julgamento
+    profissional</strong> do cirurgião-dentista. Toda decisão clínica é de responsabilidade exclusiva do profissional.
+  </div>
+
+  <h2 id="ciclo">12. Sobre o CicloSeguro (esterilização)</h2>
+  <p>
+    O <strong>CicloSeguro</strong> é um aplicativo separado, voltado ao registro de <strong>ciclos de esterilização</strong>.
+    Esclarecemos, para evitar confusão entre os apps:
+  </p>
+  <ul>
+    <li>Os dados de ciclo de esterilização <strong>não são dados de paciente</strong>.</li>
+    <li>O CicloSeguro também é <strong>local-first</strong>.</li>
+    <li>
+      Ele oferece um <strong>backup OPCIONAL no Google Drive do próprio usuário</strong>, em pasta oculta
+      (<code>appDataFolder</code>), usando o escopo <code>drive.appdata</code> — um escopo
+      <strong>não sensível</strong> e restrito à área privada do app no Drive do usuário. O desenvolvedor não acessa
+      esse conteúdo.
+    </li>
+  </ul>
+  <div class="nota">
+    <strong>Diferença chave:</strong> o ODONTOFICHA (prontuário) <strong>não</strong> faz backup em nuvem — é 100% offline.
+    O backup opcional no Google Drive descrito acima é exclusivo do CicloSeguro.
+  </div>
+
+  <h2 id="alteracoes">13. Alterações desta Política</h2>
+  <p>
+    Esta Política pode ser atualizada para refletir melhorias do app ou mudanças legais. A versão vigente é sempre a
+    publicada com a data indicada no topo. Mudanças relevantes poderão ser comunicadas dentro do app.
+  </p>
+
+  <h2 id="contato">14. Contato</h2>
+  <p>
+    Dúvidas sobre privacidade ou sobre este documento podem ser enviadas para o desenvolvedor
+    <strong>Ricardo Passoni Bindi</strong>:
+  </p>
+  <ul>
+    <li>E-mail: <span class="placeholder">[SEU-EMAIL]</span></li>
+  </ul>
+
+  <footer>
+    <p><a class="topo" href="#">↑ Voltar ao topo</a></p>
+    <p>
+      ODONTOFICHA — Prontuário Odontológico • <code>br.com.odontoficha</code> •
+      Desenvolvedor: Ricardo Passoni Bindi • Atualizado em: junho/2026.
+    </p>
+    <p>
+      Documento em rascunho, sujeito a validação jurídica. Não constitui aconselhamento legal.
+    </p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termos de Uso — ODONTOFICHA</title>
+<style>
+  :root {
+    --azul: #2E5E92;
+    --roxo: #5246B8;
+    --texto: #1f2937;
+    --suave: #4b5563;
+    --borda: #e2e8f0;
+    --fundo-aviso: #fef6e7;
+    --borda-aviso: #e0a82e;
+    --fundo-nota: #eef2fb;
+    --borda-nota: #5246B8;
+    --fundo-perigo: #fdecec;
+    --borda-perigo: #d64545;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--texto);
+    line-height: 1.65;
+    margin: 0;
+    background: #f8fafc;
+    padding: 24px 16px 64px;
+  }
+  main {
+    max-width: 820px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 40px 44px;
+  }
+  h1 {
+    color: var(--azul);
+    font-size: 1.9rem;
+    margin: 0 0 6px;
+    line-height: 1.25;
+  }
+  h2 {
+    color: var(--azul);
+    font-size: 1.3rem;
+    margin: 38px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--borda);
+    scroll-margin-top: 20px;
+  }
+  h3 {
+    color: var(--roxo);
+    font-size: 1.05rem;
+    margin: 22px 0 8px;
+  }
+  p, li { color: var(--texto); }
+  .sub { color: var(--suave); font-size: 0.95rem; margin-top: 0; }
+  a { color: var(--roxo); }
+  ul, ol { padding-left: 22px; }
+  li { margin: 5px 0; }
+  .meta {
+    font-size: 0.9rem;
+    color: var(--suave);
+    margin: 4px 0 0;
+  }
+  nav.toc {
+    background: var(--fundo-nota);
+    border: 1px solid var(--borda);
+    border-left: 4px solid var(--borda-nota);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 28px 0;
+  }
+  nav.toc strong { color: var(--azul); display: block; margin-bottom: 8px; }
+  nav.toc ol { margin: 0; padding-left: 20px; }
+  nav.toc a { text-decoration: none; }
+  nav.toc a:hover { text-decoration: underline; }
+  .aviso, .nota, .perigo {
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 18px 0;
+    font-size: 0.97rem;
+  }
+  .aviso {
+    background: var(--fundo-aviso);
+    border: 1px solid var(--borda-aviso);
+    border-left: 4px solid var(--borda-aviso);
+  }
+  .nota {
+    background: var(--fundo-nota);
+    border: 1px solid var(--borda);
+    border-left: 4px solid var(--borda-nota);
+  }
+  .perigo {
+    background: var(--fundo-perigo);
+    border: 1px solid var(--borda-perigo);
+    border-left: 4px solid var(--borda-perigo);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.95rem;
+  }
+  th, td {
+    border: 1px solid var(--borda);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--fundo-nota);
+    color: var(--azul);
+    font-weight: 600;
+  }
+  tr:nth-child(even) td { background: #fafbfc; }
+  code {
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  .placeholder {
+    background: #fff3cd;
+    border: 1px dashed var(--borda-aviso);
+    padding: 1px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  footer {
+    margin-top: 40px;
+    padding-top: 18px;
+    border-top: 1px solid var(--borda);
+    font-size: 0.88rem;
+    color: var(--suave);
+  }
+  .topo { font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Termos de Uso — ODONTOFICHA</h1>
+  <p class="sub">Prontuário Odontológico • aplicativo Android <code>br.com.odontoficha</code></p>
+  <p class="meta"><strong>Atualizado em:</strong> junho/2026</p>
+
+  <div class="aviso">
+    <strong>Aviso — documento em rascunho.</strong> Este texto foi elaborado como minuta técnica e
+    <strong>ainda deve ser revisado e validado por um advogado</strong> antes de entrar em vigor.
+    Ele não constitui aconselhamento jurídico.
+  </div>
+
+  <p>
+    Estes Termos de Uso regulam o uso do aplicativo <strong>ODONTOFICHA</strong>, desenvolvido por
+    <strong>Ricardo Passoni Bindi</strong>. Ao instalar, abrir ou usar o app, você declara que leu, entendeu e
+    concorda com estes Termos e com a <a href="privacidade.html">Política de Privacidade</a>.
+    Se você não concorda, não utilize o app.
+  </p>
+
+  <nav class="toc" aria-label="Índice">
+    <strong>Nesta página</strong>
+    <ol>
+      <li><a href="#escopo">O que é o ODONTOFICHA (escopo)</a></li>
+      <li><a href="#nao-medico">Não é diagnóstico nem dispositivo médico</a></li>
+      <li><a href="#elegibilidade">Quem pode usar</a></li>
+      <li><a href="#responsabilidades">Responsabilidades do profissional</a></li>
+      <li><a href="#dados-locais">Dados locais e backup</a></li>
+      <li><a href="#perda">Perda de dados e do aparelho</a></li>
+      <li><a href="#nao-recuperavel">Dados não são recuperáveis pelo desenvolvedor</a></li>
+      <li><a href="#isencao">Isenção de responsabilidade</a></li>
+      <li><a href="#limitacao">Limitação de responsabilidade</a></li>
+      <li><a href="#uso-aceitavel">Uso aceitável</a></li>
+      <li><a href="#propriedade">Propriedade intelectual</a></li>
+      <li><a href="#atualizacoes">Atualizações e disponibilidade</a></li>
+      <li><a href="#alteracoes">Alterações destes Termos</a></li>
+      <li><a href="#legislacao">Legislação e foro</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="escopo">1. O que é o ODONTOFICHA (escopo)</h2>
+  <p>
+    O ODONTOFICHA é uma <strong>ferramenta de registro e organização de prontuário odontológico</strong>,
+    que funciona <strong>localmente no aparelho</strong> do usuário. Ele serve para o cirurgião-dentista
+    anotar e consultar dados de pacientes, procedimentos e evolução clínica.
+  </p>
+  <div class="nota">
+    <strong>O que o app NÃO é:</strong> não é um consultório, não é um serviço de telessaúde, não presta
+    atendimento ao paciente e não toma decisões clínicas. É apenas um <strong>caderno digital seguro</strong>
+    para registros que o profissional decide inserir.
+  </div>
+
+  <h2 id="nao-medico">2. Não é diagnóstico nem dispositivo médico</h2>
+  <div class="perigo">
+    <strong>O ODONTOFICHA não é um dispositivo médico</strong> e <strong>não realiza diagnóstico, prognóstico ou
+    recomendação de tratamento</strong>. Ele não substitui o exame clínico, o julgamento técnico nem a decisão do
+    cirurgião-dentista. Toda conduta clínica é de <strong>responsabilidade exclusiva do profissional</strong>.
+  </div>
+
+  <h2 id="elegibilidade">3. Quem pode usar</h2>
+  <p>O app destina-se a <strong>profissionais de odontologia regularmente habilitados</strong> e a quem eles autorizem. Ao usar o app, você declara que:</p>
+  <ul>
+    <li>É cirurgião-dentista inscrito no CRO ou está autorizado pelo profissional responsável;</li>
+    <li>Usará o app conforme a legislação aplicável e as normas do CFO/CRO;</li>
+    <li>Tem capacidade legal para aceitar estes Termos.</li>
+  </ul>
+
+  <h2 id="responsabilidades">4. Responsabilidades do profissional</h2>
+  <p>Ao usar o ODONTOFICHA, o profissional (usuário) é o único responsável por:</p>
+  <ul>
+    <li><strong>Veracidade e exatidão</strong> dos dados inseridos;</li>
+    <li>
+      Cumprir a <strong>LGPD</strong> (Lei nº 13.709/2018), incluindo a obtenção do
+      <strong>consentimento</strong> do paciente para o tratamento de dados de saúde, quando exigido (art. 11);
+    </li>
+    <li>
+      Cumprir o <strong>dever de guarda do prontuário por, no mínimo, 20 anos</strong>
+      (<strong>Lei nº 13.787/2018</strong>), mantendo backups adequados;
+    </li>
+    <li>
+      Quando aplicável, garantir a <strong>validade jurídica</strong> dos documentos por meio de
+      <strong>assinatura digital ICP-Brasil</strong> (por exemplo, com o <strong>e-CPF</strong>);
+    </li>
+    <li>
+      Proteger o <strong>sigilo profissional</strong> e a segurança do aparelho (senha, biometria, bloqueio de tela);
+    </li>
+    <li>Atender às solicitações dos pacientes sobre seus dados (acesso, correção, exclusão), observado o prazo legal de guarda.</li>
+  </ul>
+  <div class="nota">
+    <strong>Controlador dos dados:</strong> no uso do app, o profissional é o <strong>controlador</strong> dos dados
+    dos pacientes. O desenvolvedor fornece apenas o software e <strong>não acessa</strong> esses dados.
+  </div>
+
+  <h2 id="dados-locais">5. Dados locais e backup</h2>
+  <p>
+    O ODONTOFICHA é <strong>local-first e 100% offline</strong>: os dados são gravados de forma
+    <strong>criptografada apenas no aparelho</strong>, sem servidor e sem nuvem. Não há sincronização automática
+    de cópias de segurança feita pelo app.
+  </p>
+  <div class="aviso">
+    <strong>Faça backups regularmente.</strong> Como não há cópia em nuvem, manter backups fora do aparelho é
+    <strong>responsabilidade do usuário</strong> e é indispensável para preservar o prontuário pelo prazo legal.
+  </div>
+
+  <h2 id="perda">6. Perda de dados e do aparelho</h2>
+  <p>Você compreende e aceita que os dados podem ser perdidos em situações como:</p>
+  <ul>
+    <li>Perda, roubo, dano ou troca do aparelho;</li>
+    <li>Formatação, restauração de fábrica ou desinstalação do app;</li>
+    <li>Esquecimento da senha de acesso ou indisponibilidade da biometria;</li>
+    <li>Falhas de hardware, do sistema operacional ou corrupção de arquivos.</li>
+  </ul>
+  <div class="perigo">
+    <strong>Sem backup, não há recuperação.</strong> Se qualquer uma dessas situações ocorrer e você não tiver um
+    backup, os dados serão <strong>perdidos de forma definitiva</strong>. O desenvolvedor não se responsabiliza por
+    perda de dados decorrente dessas situações.
+  </div>
+
+  <h2 id="nao-recuperavel">7. Dados não são recuperáveis pelo desenvolvedor</h2>
+  <p>
+    Pela própria arquitetura do app (dados criptografados e armazenados <strong>somente no aparelho</strong>, com a
+    chave protegida pelo Android Keystore), o <strong>desenvolvedor não tem qualquer acesso aos seus dados</strong>.
+  </p>
+  <div class="nota">
+    Em consequência, o desenvolvedor <strong>não consegue recuperar</strong> dados perdidos, <strong>não consegue
+    redefinir</strong> a senha de acesso e <strong>não consegue restaurar</strong> informações de um aparelho
+    perdido. Não existe cópia desses dados em poder do desenvolvedor.
+  </div>
+
+  <h2 id="isencao">8. Isenção de responsabilidade</h2>
+  <p>O app é fornecido <strong>"no estado em que se encontra"</strong>, sem garantias. O desenvolvedor não se responsabiliza por:</p>
+  <table>
+    <thead>
+      <tr><th>Situação</th><th>Esclarecimento</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Erros ou condutas clínicas</td><td>Toda decisão clínica é do profissional; o app apenas registra informações que o usuário insere.</td></tr>
+      <tr><td>Dados incorretos ou desatualizados</td><td>A exatidão do que é digitado é responsabilidade do usuário.</td></tr>
+      <tr><td>Perda de dados sem backup</td><td>Ver seções 5, 6 e 7. Sem backup, os dados não são recuperáveis.</td></tr>
+      <tr><td>Uso indevido ou em desacordo com a lei</td><td>Inclui falta de consentimento do paciente ou descumprimento do dever de guarda.</td></tr>
+      <tr><td>Dados exportados/compartilhados</td><td>Ao exportar, os dados saem da proteção do app; o destino e o sigilo passam a ser responsabilidade do usuário.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="limitacao">9. Limitação de responsabilidade</h2>
+  <p>
+    Na máxima extensão permitida pela lei, o desenvolvedor não responde por danos indiretos, incidentais ou
+    consequenciais decorrentes do uso ou da impossibilidade de uso do app, inclusive perda de dados, lucros
+    cessantes ou interrupção de atividade. As responsabilidades legais que não possam ser afastadas por lei
+    permanecem íntegras.
+  </p>
+
+  <h2 id="uso-aceitavel">10. Uso aceitável</h2>
+  <p>Ao usar o app, você concorda em <strong>não</strong>:</p>
+  <ul>
+    <li>Usar o app para finalidade ilícita ou em violação à LGPD, ao sigilo profissional ou às normas do CFO/CRO;</li>
+    <li>Inserir dados de terceiros sem base legal (como o consentimento, quando exigido);</li>
+    <li>Tentar burlar a criptografia, a trava de acesso ou os mecanismos de segurança do app;</li>
+    <li>Realizar engenharia reversa, descompilação ou redistribuição não autorizada do app.</li>
+  </ul>
+
+  <h2 id="propriedade">11. Propriedade intelectual</h2>
+  <p>
+    O aplicativo, sua marca, código e elementos visuais pertencem ao desenvolvedor
+    <strong>Ricardo Passoni Bindi</strong>. <strong>Os dados que você insere são seus</strong> (e dos respectivos
+    titulares) — o desenvolvedor não reivindica qualquer direito sobre eles e, como dito, sequer tem acesso a eles.
+  </p>
+
+  <h2 id="atualizacoes">12. Atualizações e disponibilidade</h2>
+  <p>
+    O app pode receber atualizações para correções e melhorias. O desenvolvedor não garante disponibilidade
+    ininterrupta nem compatibilidade com todos os aparelhos e versões de sistema. Recomenda-se manter o app e o
+    sistema operacional atualizados.
+  </p>
+
+  <h2 id="alteracoes">13. Alterações destes Termos</h2>
+  <p>
+    Estes Termos podem ser atualizados. A versão vigente é sempre a publicada com a data indicada no topo. O uso
+    continuado do app após alterações relevantes representa concordância com a versão atualizada.
+  </p>
+
+  <h2 id="legislacao">14. Legislação e foro</h2>
+  <p>
+    Estes Termos são regidos pela legislação brasileira. Eventuais controvérsias serão dirimidas no foro do
+    domicílio do usuário, quando aplicável a legislação consumerista, ou em outro foro definido em lei.
+  </p>
+
+  <h2 id="contato">15. Contato</h2>
+  <p>Dúvidas sobre estes Termos podem ser enviadas para o desenvolvedor <strong>Ricardo Passoni Bindi</strong>:</p>
+  <ul>
+    <li>E-mail: <span class="placeholder">[SEU-EMAIL]</span></li>
+  </ul>
+
+  <footer>
+    <p><a class="topo" href="#">↑ Voltar ao topo</a></p>
+    <p>
+      ODONTOFICHA — Prontuário Odontológico • <code>br.com.odontoficha</code> •
+      Desenvolvedor: Ricardo Passoni Bindi • Atualizado em: junho/2026.
+    </p>
+    <p>
+      Documento em rascunho, sujeito a validação jurídica. Não constitui aconselhamento legal.
+      Veja também a <a href="privacidade.html">Política de Privacidade</a>.
+    </p>
+  </footer>
+</main>
+</body>
+</html>

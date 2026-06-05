@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — CICLOSEGURO</title>
+<style>
+  :root {
+    --azul: #2E5E92;
+    --roxo: #5246B8;
+    --texto: #1f2933;
+    --suave: #5b6573;
+    --borda: #d9dee5;
+    --fundo-aviso: #fff8e6;
+    --borda-aviso: #e6c34d;
+    --fundo-ok: #eef6ff;
+    --borda-ok: #b7d3f0;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--texto);
+    background: #f4f6f9;
+    line-height: 1.65;
+    margin: 0;
+    padding: 24px 16px 64px;
+  }
+  main {
+    max-width: 820px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 40px 44px 48px;
+  }
+  header.topo { border-bottom: 2px solid var(--azul); padding-bottom: 18px; margin-bottom: 8px; }
+  h1 { color: var(--azul); font-size: 1.9rem; margin: 0 0 6px; line-height: 1.25; }
+  .app-tag { display: inline-block; font-size: .8rem; font-weight: 600; letter-spacing: .04em;
+    color: var(--roxo); background: #f0eefb; border-radius: 6px; padding: 3px 10px; text-transform: uppercase; }
+  .data { color: var(--suave); font-size: .92rem; margin-top: 10px; }
+  h2 { color: var(--azul); font-size: 1.3rem; margin-top: 38px; padding-top: 6px; border-top: 1px solid var(--borda); }
+  h2:first-of-type { border-top: none; }
+  h3 { color: var(--roxo); font-size: 1.06rem; margin-top: 24px; }
+  a { color: var(--azul); }
+  p, li { font-size: 1rem; }
+  .aviso {
+    background: var(--fundo-aviso);
+    border: 1px solid var(--borda-aviso);
+    border-left: 5px solid var(--borda-aviso);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 22px 0;
+  }
+  .aviso strong { color: #8a6d00; }
+  .nota-ok {
+    background: var(--fundo-ok);
+    border: 1px solid var(--borda-ok);
+    border-left: 5px solid var(--azul);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 22px 0;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: .96rem; }
+  th, td { border: 1px solid var(--borda); padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: #f0f4f9; color: var(--azul); font-weight: 600; }
+  nav.indice {
+    background: #fafbfc; border: 1px solid var(--borda); border-radius: 8px;
+    padding: 16px 20px; margin: 26px 0 8px;
+  }
+  nav.indice strong { color: var(--azul); display: block; margin-bottom: 8px; font-size: .95rem; }
+  nav.indice ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; }
+  nav.indice li { margin: 4px 0; font-size: .94rem; }
+  nav.indice a { text-decoration: none; }
+  nav.indice a:hover { text-decoration: underline; }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--borda); color: var(--suave); font-size: .9rem; }
+  code { background: #f0f2f5; padding: 1px 6px; border-radius: 4px; font-size: .92em; }
+  ul.limpa { list-style: none; padding-left: 0; }
+  ul.limpa li { padding: 6px 0 6px 26px; position: relative; }
+  ul.limpa li::before { content: "✓"; color: var(--azul); position: absolute; left: 0; font-weight: 700; }
+  .placeholder { background: #fdecef; border: 1px dashed #d98aa0; padding: 1px 8px; border-radius: 4px; color: #9b2242; font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <header class="topo">
+    <span class="app-tag">CICLOSEGURO</span>
+    <h1>Política de Privacidade</h1>
+    <p class="data">Atualizado em: junho/2026</p>
+  </header>
+
+  <div class="aviso">
+    <strong>Aviso — documento em rascunho.</strong> Este texto é um rascunho preparado de boa-fé
+    e <strong>deve ser revisado e validado por um(a) advogado(a)</strong> antes de ser publicado ou
+    usado como documento oficial. Ele não constitui aconselhamento jurídico.
+  </div>
+
+  <nav class="indice">
+    <strong>Nesta página</strong>
+    <ol>
+      <li><a href="#quem">Quem somos</a></li>
+      <li><a href="#oque">O que o app faz</a></li>
+      <li><a href="#dados">Quais dados o app trata</a></li>
+      <li><a href="#local">Armazenamento local no aparelho</a></li>
+      <li><a href="#backup">Backup opcional no Google Drive</a></li>
+      <li><a href="#acesso">Acesso do desenvolvedor</a></li>
+      <li><a href="#permissoes">Permissões do aplicativo</a></li>
+      <li><a href="#direitos">Seus direitos (LGPD)</a></li>
+      <li><a href="#seguranca">Segurança</a></li>
+      <li><a href="#criancas">Público e menores</a></li>
+      <li><a href="#alteracoes">Alterações desta política</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ol>
+  </nav>
+
+  <section id="quem">
+    <h2>1. Quem somos</h2>
+    <p>
+      O <strong>CICLOSEGURO</strong> (identificador <code>br.com.cicloseguro</code>) é um aplicativo de
+      controle e registro de ciclos de esterilização em Centrais de Material e Esterilização (CME) e
+      consultórios. Ele é desenvolvido de forma independente por:
+    </p>
+    <table>
+      <tr><th>Desenvolvedor</th><td>Ricardo Passoni Bindi</td></tr>
+      <tr><th>Aplicativo</th><td>CICLOSEGURO — controle de esterilização</td></tr>
+      <tr><th>Identificador do app</th><td><code>br.com.cicloseguro</code></td></tr>
+      <tr><th>Contato</th><td><span class="placeholder">[SEU-EMAIL]</span></td></tr>
+    </table>
+    <p>
+      Esta política explica, de forma clara e direta, quais dados o aplicativo trata, onde eles ficam
+      guardados e quem tem acesso a eles.
+    </p>
+  </section>
+
+  <section id="oque">
+    <h2>2. O que o app faz</h2>
+    <p>
+      O CICLOSEGURO serve para <strong>registrar e organizar os ciclos de esterilização</strong> de
+      autoclaves e outros equipamentos: data e hora do ciclo, equipamento utilizado, parâmetros do
+      processo, resultados de testes (por exemplo, indicadores e testes de carga) e observações do
+      profissional responsável.
+    </p>
+    <div class="nota-ok">
+      O CICLOSEGURO <strong>não é um prontuário</strong> e <strong>não registra dados de pacientes</strong>.
+      Os dados tratados se referem ao <strong>equipamento e ao processo de esterilização</strong>, não a
+      pessoas atendidas.
+    </div>
+  </section>
+
+  <section id="dados">
+    <h2>3. Quais dados o app trata</h2>
+    <p>O aplicativo trata, essencialmente, dados de processo e de operação, tais como:</p>
+    <table>
+      <thead>
+        <tr><th>Categoria</th><th>Exemplos</th><th>É dado de paciente?</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dados do ciclo de esterilização</td>
+          <td>Data/hora, número do ciclo, equipamento, programa, temperatura, resultado</td>
+          <td>Não</td>
+        </tr>
+        <tr>
+          <td>Dados de controle de qualidade</td>
+          <td>Indicadores químicos/biológicos, testes de carga, conformidade do ciclo</td>
+          <td>Não</td>
+        </tr>
+        <tr>
+          <td>Identificação operacional</td>
+          <td>Nome do estabelecimento, responsável pelo ciclo (informado pelo usuário)</td>
+          <td>Não</td>
+        </tr>
+        <tr>
+          <td>Configurações do app</td>
+          <td>Preferências locais, lista de equipamentos cadastrados</td>
+          <td>Não</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="aviso">
+      <strong>Importante:</strong> não registre dados pessoais de pacientes nos campos de observação.
+      O aplicativo não foi projetado para esse fim. Se algum dado pessoal for inserido pelo usuário em
+      campos livres, ele será tratado da mesma forma que os demais dados locais descritos nesta política.
+    </div>
+  </section>
+
+  <section id="local">
+    <h2>4. Armazenamento local no aparelho (local-first)</h2>
+    <p>
+      O CICLOSEGURO é <strong>local-first</strong>: por padrão, todos os registros ficam guardados
+      <strong>exclusivamente no próprio aparelho</strong> onde o aplicativo está instalado. Não há um
+      servidor central que receba ou armazene os seus ciclos.
+    </p>
+    <ul class="limpa">
+      <li>Os dados nascem e permanecem no dispositivo do usuário.</li>
+      <li>O aplicativo funciona sem conexão com a internet para o registro de ciclos.</li>
+      <li>O desenvolvedor não mantém banco de dados na nuvem com os ciclos dos usuários.</li>
+    </ul>
+  </section>
+
+  <section id="backup">
+    <h2>5. Backup opcional no Google Drive</h2>
+    <p>
+      Para evitar perda de dados em caso de troca ou perda do aparelho, o aplicativo oferece um
+      <strong>backup opcional</strong>. Esse recurso é <strong>desligado por padrão</strong> e só é
+      ativado se você escolher conectar a sua própria conta Google.
+    </p>
+    <p>Quando você ativa o backup:</p>
+    <ul class="limpa">
+      <li>O backup é gravado na <strong>sua própria conta do Google Drive</strong>.</li>
+      <li>Os arquivos ficam em uma <strong>pasta privada e oculta do aplicativo</strong>
+        (<code>appDataFolder</code>), que não aparece entre os seus arquivos normais do Drive.</li>
+      <li>O app usa apenas o escopo <code>drive.appdata</code>, que é um escopo
+        <strong>não-sensível</strong> e dá acesso somente a essa pasta privada do próprio app — nunca
+        aos demais arquivos do seu Drive.</li>
+    </ul>
+    <div class="nota-ok">
+      O backup pertence a você. Ele fica armazenado na <strong>sua</strong> conta Google, sob as
+      condições de privacidade e segurança do próprio Google. O desenvolvedor do CICLOSEGURO
+      <strong>não tem acesso</strong> a esse backup.
+    </div>
+
+    <h3>5.1. Como desconectar o Google Drive</h3>
+    <p>
+      Você pode <strong>desconectar o Google Drive a qualquer momento</strong> nas configurações do
+      aplicativo. Ao desconectar, o app deixa de enviar novos backups e a autorização de acesso é
+      <strong>revogada</strong>. Você também pode revogar o acesso diretamente na sua Conta Google, em
+      <em>Segurança → Acesso de terceiros</em>. Os arquivos já enviados permanecem na sua conta até que
+      você os remova.
+    </p>
+  </section>
+
+  <section id="acesso">
+    <h2>6. Acesso do desenvolvedor aos seus dados</h2>
+    <div class="nota-ok">
+      <strong>O desenvolvedor nunca acessa os seus dados.</strong> Como o aplicativo é local-first e o
+      backup (quando ativado) fica na sua própria conta Google em pasta privada do app, Ricardo Passoni
+      Bindi não tem acesso aos seus ciclos de esterilização, configurações ou backups.
+    </div>
+    <p>
+      Não há coleta centralizada, não há venda de dados e não há compartilhamento dos seus registros com
+      terceiros pelo desenvolvedor.
+    </p>
+  </section>
+
+  <section id="permissoes">
+    <h2>7. Permissões do aplicativo</h2>
+    <table>
+      <thead><tr><th>Permissão / Acesso</th><th>Para que serve</th></tr></thead>
+      <tbody>
+        <tr><td>Armazenamento local</td><td>Guardar os ciclos no próprio aparelho.</td></tr>
+        <tr><td>Conta Google / Google Drive (opcional)</td><td>Somente se você ativar o backup; acesso limitado à pasta privada do app (<code>drive.appdata</code>).</td></tr>
+        <tr><td>Internet</td><td>Usada apenas para o backup opcional no Drive; não é necessária para registrar ciclos.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="direitos">
+    <h2>8. Seus direitos (LGPD)</h2>
+    <p>
+      A Lei Geral de Proteção de Dados (Lei nº 13.709/2018) garante direitos sobre dados pessoais. Como
+      os dados ficam no seu aparelho (e, opcionalmente, na sua conta Google), <strong>você mantém
+      controle direto</strong> sobre eles:
+    </p>
+    <ul class="limpa">
+      <li><strong>Acesso e correção:</strong> visualize e edite os registros diretamente no app.</li>
+      <li><strong>Exclusão:</strong> apague registros ou desinstale o app para remover os dados locais.</li>
+      <li><strong>Portabilidade:</strong> exporte os dados pelos recursos disponíveis no app.</li>
+      <li><strong>Revogação:</strong> desconecte o Google Drive a qualquer momento.</li>
+    </ul>
+    <p>
+      Para dúvidas sobre tratamento de dados, fale com o desenvolvedor pelo contato indicado abaixo.
+    </p>
+  </section>
+
+  <section id="seguranca">
+    <h2>9. Segurança</h2>
+    <p>
+      O aplicativo foi pensado com <strong>segurança desde a concepção</strong> (princípio de segurança
+      por design, em linha com o Art. 46 da LGPD). Como os dados ficam no aparelho, a proteção depende
+      também de boas práticas do usuário: manter o aparelho com bloqueio de tela, sistema atualizado e
+      não compartilhar o dispositivo desbloqueado.
+    </p>
+    <div class="aviso">
+      <strong>Backup é responsabilidade do usuário.</strong> A guarda e a recuperação dos dados — inclusive
+      a manutenção do backup no Google Drive — são responsabilidade de quem utiliza o aplicativo. Mantenha
+      cópias de segurança conforme a necessidade do seu serviço.
+    </div>
+  </section>
+
+  <section id="criancas">
+    <h2>10. Público e menores</h2>
+    <p>
+      O CICLOSEGURO é uma ferramenta de uso profissional, destinada a profissionais e estabelecimentos de
+      saúde. Não se destina a crianças nem a uso pessoal por menores de idade.
+    </p>
+  </section>
+
+  <section id="alteracoes">
+    <h2>11. Alterações desta política</h2>
+    <p>
+      Esta política pode ser atualizada para refletir melhorias do aplicativo ou mudanças legais. A data de
+      atualização sempre constará no topo do documento. Recomendamos a leitura periódica.
+    </p>
+  </section>
+
+  <section id="contato">
+    <h2>12. Contato</h2>
+    <p>
+      Dúvidas, solicitações relativas a dados ou outras questões sobre privacidade podem ser enviadas para:
+    </p>
+    <table>
+      <tr><th>Responsável</th><td>Ricardo Passoni Bindi</td></tr>
+      <tr><th>E-mail</th><td><span class="placeholder">[SEU-EMAIL]</span></td></tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>CICLOSEGURO — <code>br.com.cicloseguro</code> · Política de Privacidade · Atualizado em: junho/2026.</p>
+    <p>Rascunho sujeito a validação jurídica. Este documento não é aconselhamento jurídico.</p>
+  </footer>
+</main>
+</body>
+</html>
